@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Unlock" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Open+Sans+Condensed:300|Unlock" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+
+    <title>Baked</title>
+
+    <nav class="navcolor" class="navbar navbar-dark bg-dark"  style="background-color: blanchedalmond">
+  <!-- Navbar content -->
+  <a class="navbar-brand" href="index.erb">
+    <img src="https://image.flaticon.com/icons/svg/1302/1302342.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    Baked By Students
+  </a>
+      <li class="nav-item active">
+        <a class="nav-link" href="index.erb">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="muffin.erb">Muffins
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cake.erb">Cakes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cupcake.erb">Coookies</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="contact.erb">Contact Us</a>
+      </li>
+
+    </nav>
+  </head>
+  <body> <center> <br><br><br><br>
+  <h1>Muffins</h1>  
+
+  <img id="logo"src="http://kiswithbrooke.files.wordpress.com/2014/09/muffins-black-and-white.jpg?w=300&resize=300%2C285" ></center>
+
+  <div class="dividor">
+  </div>
+
+
+
+    <div  id="cardspace" style="height: 420px;" id="deck" class="card-deck">
+    <div class="card">
+      <img class="card-img-top" src="http://assets.kraftfoods.com/recipe_images/opendeploy/175293-be5ee1d40676f7ad4b528832fc87283f7a47c2fc_642x428.jpg" >
+      <div class="card-body">
+        <h5 class="card-title"> <%= @fimuffin.name %> </h5>
+        <p class="card-text"> <%=@fimuffin.description %> </p>
+        <p class="card-text">  <small class="text-muted">  <%=@fimuffin.price %></center>
+        
+     </center>
+     </small></p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img class="card-img-top" id="cardimg" src="https://www.momlovesbaking.com/wp-content/uploads/2015/01/Lemon-Blueberry-Muffins.jpg" >
+      <div class="card-body">
+        <h5 class="card-title"><%= @semuffin.name %></h5>
+        <p class="card-text"><%=@semuffin.description %></p>
+        <p class="card-text"> <small class="text-muted"> <%=@semuffin.price %> </small></p>
+      </div>
+    </div>
+    
+    <div class="card">
+      <img class="card-img-top" id="cardimg" src="https://d2gk7xgygi98cy.cloudfront.net/4401-3-large.jpg" >
+      <div class="card-body">
+        <h5 class="card-title"><%=@thmuffin.name %></h5>
+        <p class="card-text"><%=@thmuffin.description %> </p>
+        <p class="card-text"><small class="text-muted"><%=@semuffin.price %> </p>
+       
+      </div>
+    </div>
+    
+    <div class="card">
+    <img class="card-img-top" style="width:399px"  src="http://lifemadesimplebakes.com/wp-content/uploads/2017/05/Lemon-Cupcakes-with-Lemon-Cream-Cheese-Frosting-2.jpg" >
+    <div class="card-body">
+     <h5 class="card-title"><%=@fomuffin.name %></h5>
+     <p class="card-text"><%=@fomuffin.description %></p>
+     <p class="card-text"><small class="text-muted"><%=@fomuffin.price %></small></p>
+    </div>
+    </div>
+    </div>
+
+
+    <footer>
+<center> <h2>©2018 Baked By Students Inc. All Rights Reserved. </h2> </center>
+     </footer>
+
+     
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>
