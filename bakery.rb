@@ -3,6 +3,8 @@ require "sinatra/reloader"
 require './cookie'
 require './cake'
 require './muffin'
+require 'csv'
+
 register Sinatra::Reloader
 
 get "/"do
