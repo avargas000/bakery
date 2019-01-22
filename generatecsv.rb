@@ -4,7 +4,7 @@ require 'csv'
 
 
 CSV.open('Catalog.csv', 'wb') do |csv|
-csv << ["Catagory","Name", "Description","Price"]
+csv << ["Category","Name", "Description","Price"]
         csv << ["Cookie", "Oatmeal", "made with cranberry", "$2.50"]
         csv << ["Cookie", "Brownie", "made with dark chocolate chips", "$3.50"]
         csv << ["Cookie", "Chocolate Chip", "made with chocolate chips", "$3.00"]
